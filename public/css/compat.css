@@ -1,0 +1,53 @@
+/* Jembatan antara markup Blade dan CSS prototipe (karymatch.css). Tidak mengubah desain prototipe. */
+a{text-decoration:none}a:hover{text-decoration:underline}
+a.btn,a.chip,button.btn,button.chip{display:inline-block;text-decoration:none;line-height:1.3}
+a.btn:hover,a.chip:hover{text-decoration:none}
+.btn.s{padding:5px 12px;font-size:12px}
+.nav a{display:inline-block;color:var(--mu);font:700 13px Poppins,system-ui,sans-serif;padding:8px 13px;margin:2px;border-radius:16px;transition:background .18s,color .18s,transform .15s}
+.nav a:hover{background:var(--bl);color:var(--b);transform:translateY(-1px);text-decoration:none}
+.nav a.on{background:var(--bl);color:var(--b)}
+.nav a em{font-style:normal;background:var(--bd);color:#fff;border-radius:99px;font-size:10px;padding:1px 6px;margin-left:5px}
+.hd form{margin:0}.hd .who{font-size:13px;color:var(--mu);font-weight:700}
+.hd .logo{text-decoration:none}
+.hd .logo:hover{text-decoration:none}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:800px){.row{grid-template-columns:1fr}}
+.acts{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}.acts form{margin:0}
+form label{margin-top:10px}form .row label:first-child,form .row div:first-child>label{margin-top:10px}
+.flash{border-radius:16px;padding:11px 16px;margin:12px 0;border:2px solid;font-weight:600}
+.flash.ok{background:#e6f5f2;border-color:#9fd5cc;color:#14695f}
+.flash.err{background:#ffe6e6;border-color:#eba0a0;color:#8c1f1f}
+:root[data-theme=dark] .flash.ok,:root:not([data-theme=light]) .flash.ok{}
+.pal{display:flex;gap:10px;align-items:center;flex-wrap:wrap;border-radius:16px;padding:12px 16px;margin:10px 0;border:2px solid}
+.pal.warn{background:#fff6dc;border-color:#f4c95d;color:#5c4200}
+.pal.danger{background:#ffe6e6;border-color:#eba0a0;color:#8c1f1f}
+.badge{font-size:11px;font-weight:800;padding:2px 9px;border-radius:99px;margin-left:6px;vertical-align:middle}
+.badge.bisnis{background:#dbe8ff;color:#12327a}.badge.pro{background:#f4c95d;color:#151f33}
+.job.pro{border:2px solid #f4c95d;box-shadow:0 8px 24px #f4c95d40}.job.bisnis{border:2px solid #6b9bff}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:99px;background:var(--bl);color:var(--b)}
+.tag.ok{background:#e6f5f2;color:#14695f}.tag.bd{background:#ffe0e8;color:#a3243f}.tag.wn{background:#fff3c4;color:#7a5200}
+.wrap{max-width:1000px;margin:0 auto}
+.hdnav{display:flex;align-items:center;gap:10px;flex-wrap:wrap;flex:1}
+.pill-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--bd);margin-right:6px}
+.hl{font-size:clamp(26px,4vw,38px);color:var(--logo);letter-spacing:-.03em;margin:4px 0 4px}
+.sub{color:var(--mu);margin:0 0 14px}
+.srch{display:grid;grid-template-columns:2fr 1.2fr 1fr auto;gap:10px;align-items:end}@media(max-width:800px){.srch{grid-template-columns:1fr}}
+.srch label{margin:0}
+.chk{display:flex;gap:8px;align-items:center;font-weight:700;font-size:13px;margin:0}.chk input{width:auto}
+.jc .ttl{color:var(--ink);text-decoration:none}.jc .ttl:hover{text-decoration:underline}
+.jc form{margin:0;display:inline}
+.tl{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--mu)}.tl b{color:var(--ink)}
+.skok{color:var(--ok);font-weight:700}.skno{color:var(--bd);font-weight:700}
+.cvp h4{margin:14px 0 4px;color:var(--b)}.cvp ul{margin:0;padding-left:20px}
+.ans{background:var(--bl);border-radius:14px;padding:8px 12px;margin:6px 0}
+.nt{border-left:4px solid var(--ln)}.nt.new{border-left-color:var(--bd);background:var(--bl)}
+footer{padding:30px 16px;color:var(--mu);text-align:center;font-size:13px}
+
+/* Penyesuaian halaman publik agar mengikuti landing page HTML referensi */
+.public-main{max-width:none;padding:0;width:100%;margin:0}
+.hm-nav a{display:inline-block;border:0;background:none;color:#2f4368;font:800 12.5px Poppins;padding:6px 10px;border-radius:12px;text-decoration:none}
+.hm-nav a:hover{background:#f6f4ee;color:#202f49}
+.hm-tab .logo{text-decoration:none}
+.hm-body .btn{text-decoration:none;display:inline-flex;align-items:center}
+.hm-adm{text-decoration:none}
+.hm-sec .card{box-shadow:0 8px 24px rgba(32,47,73,.05)}
+@media(max-width:700px){.hm-nav a{padding:5px 7px;font-size:12px}}
